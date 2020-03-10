@@ -1,1 +1,3 @@
 
+#DT FUZZ测试：
+     Generally speaking fuzz is a brute force method which used to break software，就是用大量的测试用例一个一个试，尽可能多的找出有可能出问题的地方。
