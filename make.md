@@ -21,7 +21,8 @@ ssp-buffer-size用于控制预防堆栈溢出的缓冲区的下限值，和-fsta
 -fPIC：生成位置无关的代码，适用于动态链接
 -fPIE：为可执行文件生成位置无关代码
   
- 
-gcc在4.2版本中添加了-fstack-protector和-fstack-protector-all编译参数以支持栈保护功能，4.9新增了-fstack-protector-strong编译参数让保护的范围更广。
-fstack-protector 4.2 只为局部变量中包含长度超过8Byte（含）的char数组的函数插入保护代码  
-fstack-protector 4.9 满足一下三个条件都会插入保护代码：1.局部变量的地址作为赋值语句的右值或函数参数；2.局部变量包含数组类型的局部变量，不管数组的长度；3.带register声明的局部变量
+  
+   
+   
+gcc在4.2版本中添加了-fstack-protector和-fstack-protector-all编译参数以支持栈保护功能，4.9新增了-fstack-protector-strong编译参数让保护的范围更广。   
+  fstack-protect-strong 带来的性能损失要小于fstack-protector-all.
